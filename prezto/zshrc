@@ -61,7 +61,11 @@ export PATH=$HOME/.local/bin:$PATH
 export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH 
 export FPATH=$HOME/tools/ripgrep/complete:$FPATH 
 alias lg='lazygit'
-alias ga='git add'
+alias ga='git add --verbose'
+alias gl='git pull'
+alias gc='git commit --verbose'
+alias gst='git status'
+alias gp='git push'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
