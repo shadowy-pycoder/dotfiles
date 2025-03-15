@@ -43,6 +43,11 @@ unsetopt correct
 unsetopt correctall
 DISABLE_CORRECTION="true"
 
+# https://unix.stackexchange.com/questions/87062/how-to-display-the-name-of-the-current-virtualenv
+function virtualenv_info {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
 
 alias activ="source ./venv/bin/activate" 
 alias vim="nvim" 
