@@ -19,6 +19,11 @@ fi
 
 # Customize to your needs...
 
+# first try to find a suggestion from your history, but, if it can't find a match, will find a suggestion from the completion engine
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+# Set ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE to an integer value to disable autosuggestion for large buffers. The default is unset, which means that autosuggestion will be tried for any buffer size. Recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
