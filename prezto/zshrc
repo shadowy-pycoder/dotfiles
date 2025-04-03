@@ -25,9 +25,9 @@ export NVM_LAZY_LOAD=true
 source ~/.zprezto-contrib/zsh-nvm/zsh-nvm.plugin.zsh
 
 # first try to find a suggestion from your history, but, if it can't find a match, will find a suggestion from the completion engine
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # Set ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE to an integer value to disable autosuggestion for large buffers. The default is unset, which means that autosuggestion will be tried for any buffer size. Recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
@@ -51,7 +51,7 @@ bindkey '^[l' autosuggest-accept
 
 unsetopt correct
 unsetopt correctall
-DISABLE_CORRECTION="true"
+export DISABLE_CORRECTION="true"
 
 # https://unix.stackexchange.com/questions/87062/how-to-display-the-name-of-the-current-virtualenv
 function virtualenv_info {
