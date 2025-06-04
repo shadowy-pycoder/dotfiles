@@ -82,6 +82,10 @@ alias gc='git commit --verbose'
 alias gst='git status'
 alias gp='git push'
 alias lh='ls -lah'
+function md() {
+  pandoc $1 -s -c ~/.local/share/pandoc/gruvbox-dark-medium.min.css -o /tmp/pandocRenderedStyledMD.html
+  xdg-open /tmp/pandocRenderedStyledMD.html
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
