@@ -86,6 +86,10 @@ function md() {
   pandoc $1 -s -c ~/.local/share/pandoc/gruvbox-dark-medium.min.css -o /tmp/pandocRenderedStyledMD.html
   xdg-open /tmp/pandocRenderedStyledMD.html
 }
+function md() {
+  pandoc $1 --highlight-style zenburn -s -c ~/.local/share/pandoc/gruvbox-dark-medium.min.css -o /tmp/pandocRenderedStyledMD.html
+  xdg-open /tmp/pandocRenderedStyledMD.html
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
