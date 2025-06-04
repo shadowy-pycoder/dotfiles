@@ -39,7 +39,6 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'git' \
   'completion'\
-  'zsh-z' \
   'autosuggestions' \
   'syntax-highlighting' \
   'command-not-found' \
