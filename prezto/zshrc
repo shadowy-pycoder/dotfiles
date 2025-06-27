@@ -82,6 +82,7 @@ alias gc='git commit --verbose'
 alias gst='git status'
 alias gp='git push'
 alias lh='ls -lah'
+alias sudop='sudo env PATH=$PATH'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
