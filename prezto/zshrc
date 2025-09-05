@@ -60,7 +60,7 @@ function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
 
-
+alias activ="source activ_env"
 alias vim="nvim"
 alias vi="nvim"
 alias vimv="source ./venv/bin/activate && nvim ."
