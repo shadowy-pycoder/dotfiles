@@ -61,7 +61,6 @@ function virtualenv_info {
 }
 
 
-alias activ="source ./venv/bin/activate"
 alias vim="nvim"
 alias vi="nvim"
 alias vimv="source ./venv/bin/activate && nvim ."
