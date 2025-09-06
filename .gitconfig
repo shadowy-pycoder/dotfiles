@@ -1,0 +1,27 @@
+[user]
+	name = user
+	email = email@example.com
+[http]
+	sslVerify = false
+[core]
+	excludesfile = /home/witcher/.gitignore
+[gpg]
+	format = ssh
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+    tool = meld
+	conflictStyle = merge
+[mergetool "meld"]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false 
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    ; cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[mergetool]
+	keepBackup = false
+	writeToTemp = true
