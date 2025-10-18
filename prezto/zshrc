@@ -92,6 +92,10 @@ alias gp='git push'
 alias lh='ls -lah'
 alias sudop='sudo env PATH=$PATH'
 alias ip='ip -c'
+alias bin='f(){ p=${2:-8}; printf "%0${p}d\n" "$(echo "obase=2;$1" | bc)"; }; f'
+alias hex='printf "%#x\n"'
+alias oct='printf "%#o\n"'
+alias dec='printf "%d\n"'
 
 source "$HOME/.cargo/env"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
