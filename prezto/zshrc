@@ -46,9 +46,9 @@ autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey -v
-if [[ -n "$NVIM" ]]; then
-  bindkey -v
-fi
+#if [[ -n "$NVIM" ]]; then
+  #bindkey -v
+#fi
 bindkey "^[k" up-line-or-beginning-search # Up
 bindkey "^[j" down-line-or-beginning-search # Down
 bindkey "^[l" autosuggest-accept
@@ -56,6 +56,8 @@ bindkey "^R" history-incremental-search-backward
 bindkey "^S" history-incremental-search-forward
 bindkey -r '^[;'
 bindkey -r '^[h'
+bindkey "^H" backward-delete-char
+
 
 unsetopt correct
 unsetopt correctall
@@ -71,14 +73,9 @@ alias vim="activ && nvim"
 alias vi="activ && nvim"
 alias vimv="activ && nvim"
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias startPg='~/Documents/pgadmin4/pgadmin4env/bin/python ~/Documents/pgadmin4/pgadmin4env/lib/python3.10/site-packages/pgadmin4/pgAdmin4.py'
-
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PATH=$HOME/.local/bin:$PATH
 export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
 export FPATH=$HOME/tools/ripgrep/complete:$FPATH
