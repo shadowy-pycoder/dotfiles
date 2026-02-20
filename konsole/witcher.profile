@@ -36,5 +36,4 @@ ReflowLines=true
 ScrollBarPosition=2
 
 [Terminal Features]
-BlinkingCursorEnabled=true
-
+BlinkingCursorEnabled=false
