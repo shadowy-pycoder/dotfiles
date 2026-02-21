@@ -23,11 +23,12 @@ TerminalMargin=1
 TerminalRows=30
 
 [Interaction Options]
+AllowMouseTracking=true
 ColorFilterEnabled=false
 MouseWheelZoomEnabled=false
 
 [Keyboard]
-KeyBindings=linux
+KeyBindings=default
 
 [Scrolling]
 HighlightScrolledLines=false
@@ -36,4 +37,5 @@ ReflowLines=true
 ScrollBarPosition=2
 
 [Terminal Features]
+BellMode=3
 BlinkingCursorEnabled=false
