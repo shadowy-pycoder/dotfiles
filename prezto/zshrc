@@ -99,3 +99,4 @@ source "$HOME/.cargo/env"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(zoxide init zsh)"
 #zprof
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
